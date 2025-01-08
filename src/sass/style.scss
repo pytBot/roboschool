@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+body {
+    min-height: 100vh;
+}
+
 .container {
     position: relative;
     max-width: 1160px;
@@ -20,6 +24,14 @@ a {
 
 ul>li {
     list-style-type: none;
+}
+
+.show {
+    display: flex !important;
+}
+
+.hide {
+    display: none !important;
 }
 
 @import 'base/variable';

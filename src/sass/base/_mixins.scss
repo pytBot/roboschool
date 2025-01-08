@@ -1,0 +1,49 @@
+@mixin promo-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #fff;
+}
+
+@mixin link-call {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 160%;
+    color: #fff;
+}
+
+@mixin a-b-hover {
+
+    &::after,
+    &::before {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 1px;
+        background-color: #fff;
+        transition: all 0.5s;
+    }
+
+    &:hover {
+
+        &:after,
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+@mixin btn-media {
+    border-radius: 10px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.08);
+    // opacity: 0.4;
+    border: 1px solid #6c6a76;
+    border-bottom: #2a2639;
+    cursor: pointer;
+
+    &:active {
+        border: 1px solid red;
+    }
+}

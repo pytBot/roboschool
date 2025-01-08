@@ -1,0 +1,48 @@
+* {
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
+@import 'base/variable';
+@import 'base/mixins';
+
+@import 'blocks/header';
+@import 'blocks/logo';
+@import 'blocks/text';
+@import 'blocks/title';
+@import 'blocks/navigation';
+@import 'blocks/description';
+@import 'blocks/button';
+@import 'blocks/btns-media';
+@import 'blocks/menu';
+
+@import 'sections/promo';
+@import 'sections/description';
+@import 'sections/skills';
+@import 'sections/coaches';
+@import 'sections/tariffs';
+@import 'sections/registration';
+@import 'sections/footer';
+
+
+
+@import 'base/media';

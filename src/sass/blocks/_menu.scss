@@ -1,0 +1,54 @@
+.menu {
+    width: 100vw;
+    height: 100vh;
+
+    &__list {
+        gap: 20px;
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 160%;
+        color: #fff;
+        @include a-b-hover;
+    }
+
+    &__close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        @include btn-media;
+
+        span {
+            position: absolute;
+            top: 20px;
+            left: 14px;
+            display: block;
+            width: 17px;
+            height: 2px;
+            background-color: #fff;
+            transform: rotate(45deg);
+        }
+
+        .close_45 {
+            transform: rotate(-45deg);
+        }
+
+        &:active {
+            span {
+                background-color: red;
+            }
+        }
+    }
+}
+
+.menu,
+.menu__list {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-blue-bg;
+}

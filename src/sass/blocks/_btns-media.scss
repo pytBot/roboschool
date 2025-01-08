@@ -1,0 +1,47 @@
+.btns-media {
+    display: none;
+    gap: 10px;
+
+}
+
+.btn-call,
+.btn-menu {
+    @include btn-media;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:active {
+        .btn-menu-item {
+            background-color: red;
+        }
+
+        svg {
+            path {
+                fill: red;
+            }
+        }
+    }
+
+}
+
+
+.btn-menu {
+    align-items: start;
+    padding: 9px;
+    flex-direction: column;
+    gap: 5px;
+
+    &-item {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: #fff;
+
+    }
+
+    .min {
+        width: 13px;
+    }
+}

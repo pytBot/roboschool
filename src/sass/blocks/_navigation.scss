@@ -1,0 +1,28 @@
+.navigation {
+
+    display: flex;
+    justify-content: space-between;
+
+
+    &__list {
+        width: 325px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 8px;
+    }
+
+    &__item {
+        display: block;
+    }
+
+    &__link {
+        @include promo-text;
+        @include a-b-hover;
+    }
+
+    &__call {
+        @include link-call;
+        @include a-b-hover;
+    }
+
+}
